@@ -1,0 +1,53 @@
+/* COLORS */
+
+.white-color {
+    color: #ffffff;
+}
+
+.primary-color {
+    color: #121725;
+}
+
+.secondary-color {
+    color: #54E6AF;
+}
+
+.dark-grey-color {
+    color: #2C344B;
+}
+
+.light-grey-color {
+    color: #5A668A;
+}
+
+.grey-color {
+    color: #C2CBE5;
+}
+
+.title-font {
+    font-size: 52px;
+    line-height: 62px;
+}
+
+.body {
+    font-family: "Chivo Light", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.btn-primary {
+    background: #54E6AF;
+    border-radius: 28px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 27px;
+    padding-right: 27px;
+    color: black;
+    border: 0px solid #54E6AF;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.btn-primary:hover {
+    background: #B3FFE2;
+}
