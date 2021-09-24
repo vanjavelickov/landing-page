@@ -33,6 +33,12 @@
     font-family: "Chivo Light", sans-serif;
     font-size: 18px;
     line-height: 28px;
+    margin: 0;
+    /* margin-top: 0; */
+    padding: 0;
+    overflow: hidden;
+    min-width: 100%;
+    min-height: 100vw;
 }
 
 .btn-primary {
@@ -50,4 +56,27 @@
 
 .btn-primary:hover {
     background: #B3FFE2;
+}
+
+.container {
+    background-color: #121725;
+    display: grid;
+    color: black;
+    grid-template-rows: 8% 12% 50% 22% 8%;
+    grid-template-columns: 5% 12% 10% 53% 20%;
+    font-size: 40px;
+    overflow: hidden;
+}
+
+.item-1 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.item-2 {
+    grid-area: 2 / 4 / 4 / 6;
+}
+
+.item-3 {
+    grid-area: 5 / 5 / 6 / 6;
+    transform: translateY(-85%);
 }
