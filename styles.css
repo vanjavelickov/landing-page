@@ -1,4 +1,9 @@
 /* COLORS */
+* {
+    font-family: 'Chivo Light', sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
 .white-color {
     color: #ffffff;
@@ -27,18 +32,13 @@
 .title-font {
     font-size: 52px;
     line-height: 62px;
+    text-transform: uppercase;
+    font-weight: normal;
 }
 
-.body {
-    font-family: "Chivo Light", sans-serif;
+.body-font {
     font-size: 18px;
     line-height: 28px;
-    margin: 0;
-    /* margin-top: 0; */
-    padding: 0;
-    overflow: hidden;
-    min-width: 100%;
-    min-height: 100vw;
 }
 
 .btn-primary {
@@ -52,6 +52,7 @@
     border: 0px solid #54E6AF;
     text-align: center;
     white-space: nowrap;
+    font-weight: bold;
 }
 
 .btn-primary:hover {
@@ -62,10 +63,35 @@
     background-color: #121725;
     display: grid;
     color: black;
-    grid-template-rows: 8% 12% 50% 22% 8%;
-    grid-template-columns: 5% 12% 10% 53% 20%;
+    grid-template-rows: 10% 10% 8% 20% 13% 15% 10% 10%;
+    grid-template-columns: 10% 20% 20% 40% 10%;
     font-size: 40px;
     overflow: hidden;
+}
+
+.item-2,
+.item-4 {
+    grid-column: 2 / 4;
+}
+
+.item-2,
+.item-5 {
+    grid-column: 2 / 3;
+}
+
+.item-2,
+.item-6 {
+    grid-column: 2 / 4;
+}
+
+.item-2,
+.item-7 {
+    grid-column: 2 / 4;
+}
+
+.item-2,
+.item-3 {
+    grid-column: 5 / 4;
 }
 
 .item-1 {
@@ -73,10 +99,60 @@
 }
 
 .item-2 {
-    grid-area: 2 / 4 / 4 / 6;
+    grid-area: 2 / 3 / 4 / 5;
 }
 
 .item-3 {
-    grid-area: 5 / 5 / 6 / 6;
-    transform: translateY(-85%);
+    transform: translateY(-25%);
+    grid-row: 7 / 8;
+}
+
+.item-4 {
+    background-color: #121725;
+    grid-row: 4 / -4;
+}
+
+.item-5 {
+    background-color: #121725;
+    grid-row: 5 / -5;
+    justify-content: start;
+    word-wrap: normal;
+
+}
+
+.item-6 {
+    background-color: #121725;
+    grid-row: 6 / -4;
+}
+
+.item-7 {
+    background-color: #121725;
+    grid-row: 7 / -3;
+}
+
+.input-with-button {
+    background-color: #2C344B;
+    width: 427px;
+    border-radius: 28px;
+    display: flex;
+    justify-content: space-around;
+    gap: 60px;
+}
+
+.input-style-class {
+    background-color: #2C344B;
+    color: white;
+    border: 0px solid #2C344B;
+}
+
+input:focus {
+    outline: none;
+    background-color: #2C344B;
+    color: #5A668A;
+}
+
+.hiding-class {
+    color: #FB3E3E;
+    font-size: 12px;
+    font-weight: bold;
 }
