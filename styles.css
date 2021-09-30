@@ -67,45 +67,46 @@ body {
 }
 
 .container {
+    overflow-x: hidden;
+    min-height: 100vh;
     display: grid;
     color: black;
     font-size: 40px;
-    grid-template-rows: minmax(80px, auto);
+    grid-template-rows: 30px 131px 1fr 130px;
     grid-template-columns: 165px 1fr 1fr 2fr;
-    overflow-x: hidden;
-    min-height: 100vh;
-    min-width: 100vh;
+    grid-template-areas:
+        ". . . ."
+        ". logo img img"
+        ". text img img"
+        ". . . dots";
 }
 
 .item-1 {
     grid-area: logo;
-    grid-area: 2 / 2 / 3 / 3;
 }
 
 .item-4 {
     grid-area: text;
-    grid-area: 3 / 2 / 5 / 4;
+    grid-area: 3 / 2 / 4 / 4;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 40px;
     background-color: #121725;
 }
 
 .item-2>img {
-    object-fit: fill;
-    width: 140vh;
-    max-height: 75vh;
+    object-fit: cover;
+    width: 100%;
+    max-height: 95vh;
 }
 
 .item-2 {
-    grid-area: 2 / 3 / 5 / 5;
+    grid-area: img;
 }
 
 .item-3 {
     grid-area: dots;
-    grid-column: 4;
-    grid-row: 5 / 6;
     justify-self: end;
     transform: translateY(-65%);
 }
@@ -172,7 +173,6 @@ input:focus {
     .icons-class {
         justify-content: flex-start;
         gap: 10px;
-        /* max-width: 300px; */
     }
 }
 
