@@ -30,11 +30,11 @@
                 Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, Apple
                 Podcasts, Google Podcasts, Pocket Casts and more!
             </div>
-            <div class="input-with-button dark-grey-color input-class">
+            <form id="form" class="input-with-button dark-grey-color input-class" onsubmit="checkEmail()" novalidate>
                 <input id="email" class="input-style-class" name="email" type="email" placeholder="Email address"
                     required>
-                <button class="btn-primary" type="button" onclick="checkEmail()" id="request">Request Access</button>
-            </div>
+                <button class="btn-primary" type="submit" id="request">Request Access</button>
+            </form>
             <span id="validation" class="hiding-class"></span>
             <div class="icons-class">
                 <div>
